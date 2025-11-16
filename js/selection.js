@@ -37,7 +37,7 @@ function handleActions(actions, level) {
 function executeAction(action, level) {
   switch (action.action) {
     case "level":
-      window.location.href = `../game.html?level=${action.level}`;
+      window.location.href = `game.html?level=${action.level}`;
       break;
     case "coins":
     case "quality":
@@ -58,7 +58,7 @@ function executeAction(action, level) {
       const params = new URLSearchParams(window.location.search);
       // Получаем конкретный параметр
       const l = params.get('level');  // "John"
-      window.location.href = "../selection.html?level="+(Number(l)+1);
+      window.location.href = "selection.html?level="+(Number(l)+1);
 
       break;
     default:
