@@ -157,7 +157,7 @@ function renderButtons(buttons) {
 // Загрузка JSON уровня
 async function loadLevel() {
     const levelNum = getLevelNumber();
-    const url = `/levels/${levelNum}.json`;
+    const url = `levels/${levelNum}.json`;
 
     try {
         const response = await fetch(url);
