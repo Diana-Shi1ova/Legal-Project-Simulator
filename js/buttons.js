@@ -96,8 +96,10 @@ window.buttonRegistry.generate_ia = function(level, btn) {
 
 window.buttonRegistry.use_ia = function(level, btn) {
     if(!sessionStorage['credits']) statsChange('risk', 5);
+    if(!sessionStorage['attribute']) statsChange('risk', 10);
     statsChange('quality', -1);
     sessionStorage.removeItem('credits');
+    sessionStorage.removeItem('attribute');
     window.location.href = "selection.html?level=1";
 };
 

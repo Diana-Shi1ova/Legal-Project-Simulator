@@ -53,5 +53,6 @@ function attribute(self){
     self.style.display = "none";
 
     sessionStorage.removeItem('author');
+    sessionStorage.setItem('attribute', true);
 
 }
