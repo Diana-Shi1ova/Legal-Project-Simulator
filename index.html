@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Project Simulator</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <img src="/assets/inicio.png" alt="">
+    <!-- <a href="levels_list.html">Empezar</a> -->
+    <button id="inicio" onclick="levels();">Empezar</button>
+    <script>
+        function levels(){
+            sessionStorage.clear();
+            sessionStorage.setItem("coins", 100);
+            sessionStorage.setItem("time", 10);
+            sessionStorage.setItem("quality", 3);
+            sessionStorage.setItem("risk", 0);
+
+            // window.location.href = "levels.html";
+            window.location.href = "selection.html?level=0"
+        }
+    </script>
+</body>
+</html>

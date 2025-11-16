@@ -1,0 +1,174 @@
+{
+  "images": [
+    {
+      "id": "icon",
+      "src": "/assets/icon/icon.png",
+      "visible": true
+    },
+    {
+      "id": "icon-luna",
+      "src": "/assets/icon/icon-luna.png",
+      "map": "icon-map",
+      "visible": false
+    },
+    {
+      "id": "icon-attribute1",
+      "src": "/assets/icon/icon-attribute1.png",
+      "map": "icon-attribute1-map",
+      "visible": false
+    },
+    {
+      "id": "icon-attribute2",
+      "src": "/assets/icon/icon-attribute2.png",
+      "map": "icon-attribute2-map",
+      "visible": false
+    },
+    {
+      "id": "icon-attribute3",
+      "src": "/assets/icon/icon-attribute3.png",
+      "map": "icon-attribute3-map",
+      "visible": false
+    },
+    {
+      "id": "icon-licence",
+      "src": "/assets/icon/icon-licence.png",
+      "map": "icon-licence-map",
+      "visible": false
+    }
+  ],
+
+  "maps": {
+    "icon-map": [
+      {
+        "coords": "1622,606,1768,642",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "icon-licence"
+        }
+      },
+    {
+        "coords": "1398,660,1541,692",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "icon-attribute1"
+        }
+      }
+    ],
+    "icon-attribute1-map": [
+      {
+        "coords": "722,333,877,394",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "icon-attribute2"
+        }
+      },
+      {
+        "coords": "1281,330,1436,391",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "icon-attribute3"
+        }
+      },
+      {
+        "coords": "1489,74,1566,148",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "icon-luna"
+        }
+      }
+    ],
+    "icon-attribute2-map": [
+      {
+        "coords": "722,333,877,394",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "icon-attribute2",
+          "credits":true,
+          "author": "https://www.flaticon.es/iconos-gratis/luna - Luna - iconos creados por Freepik - Flaticon"
+        }
+      },
+      {
+        "coords": "1281,330,1436,391",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "icon-attribute3",
+          "credits":true,
+          "author": "https://www.flaticon.es/iconos-gratis/luna - Luna - iconos creados por Freepik - Flaticon"
+        }
+      },
+      {
+        "coords": "1489,74,1566,148",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "icon-luna"
+        }
+      }
+    ],
+    "icon-attribute3-map": [
+      {
+        "coords": "722,333,877,394",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "icon-attribute2",
+          "credits":true,
+          "author": "https://www.flaticon.es/iconos-gratis/luna - Luna - iconos creados por Freepik - Flaticon"
+        }
+      },
+      {
+        "coords": "1281,330,1436,391",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "icon-attribute3",
+          "credits":true,
+          "author": "https://www.flaticon.es/iconos-gratis/luna - Luna - iconos creados por Freepik - Flaticon"
+        }
+      },
+      {
+        "coords": "1489,74,1566,148",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "icon-luna"
+        }
+      }
+    ],
+    "icon-licence-map": [
+      {
+        "coords": "1199,144,1258,197",
+        "action": {
+          "type": "changeImage",
+          "from": "library",
+          "to": "icon-luna",
+          "credits": true,
+          "author": "https://www.flaticon.es/iconos-gratis/luna - Luna - iconos creados por Freepik - Flaticon"
+        }
+      }
+    ]
+  },
+
+  "buttons": [
+    {
+      "name": "Buscar",
+      "id": "search",
+      "visible": true,
+      "function": "search_icon"
+    },
+    {
+      "name": "Usar",
+      "id": "use",
+      "visible": false,
+      "function": "use_icon"
+    }
+  ] 
+}
+

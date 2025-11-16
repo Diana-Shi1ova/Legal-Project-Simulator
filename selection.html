@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selection | Legal Project Simulator</title>
+  <script src="./js/code.js" defer></script>
+  <link rel="stylesheet" href="css/selection.css">
+  <!-- <link rel="stylesheet" href="/css/style.css"> -->
+</head>
+<body>
+    <!-- Панель статов -->
+    <header id="stats-bar">
+        <ul>
+            <li>Monedas: <span id="coins"></span></li>
+            <li>Tiempo: <span id="time"></span></li>
+            <li>Calidad: <span id="quality"></span></li>
+            <li>Riesgo: <span id="risk"></span>%</li>
+        </ul>
+        <dialog id="inventory">
+            <h2>Créditos:</h2>
+            <ul id="inventory-list"></ul>
+            <button id="inv-close" onclick="closeInventory();">Cerrar</button>
+            <button id="inv-attribute" onclick="attribute(this);" style="display: none;">Atribuir</button>
+        </dialog>
+        <button id="code" onclick="openInventory();">&lt;/&gt;</button>
+    </header>
+    <div id="selection-centered">
+      <h1 id="level-name"></h1>
+      <p id="level-question"></p>
+
+      <div id="options"></div>
+
+      <dialog id="dialog"></dialog>
+    </div>
+  
+
+  <script src="/js/stats.js" defer></script>
+  <script src="/js/selection.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body{
+    background-color: #090031;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 16pt;
+    color: #fff;
+    font-family: 'Rockwell', 'Arial';
+}
+
+button{
+    all: unset;
+    background-color: #9b045f;
+    cursor: pointer;
+    padding: .5em;
+}
+
+button:hover{
+    background-color: #8d0055;
+}
+
+button:active{
+    background-color: #6f0043;
+}
+
+header{
+    width: 100%;
+}
+
+#stats-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: #0f0051;
+}
+
+#stats-bar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2em;
+    margin: 0;
+    padding: 1em;
+}
+
+#code{
+    padding: .8em;
+    position: absolute;
+    right: .2em;
+    top: .2em;
+    border-radius: 50%;
+}

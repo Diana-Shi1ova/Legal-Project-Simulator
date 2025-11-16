@@ -1,0 +1,181 @@
+{
+  "images": [
+    {
+      "id": "search",
+      "src": "/assets/image/search.png",
+      "map": "search-map",
+      "visible": true
+    },
+    {
+      "id": "search-menu1",
+      "src": "/assets/image/search-menu1.png",
+      "map": "search-menu1-map",
+      "visible": false
+    },
+    {
+      "id": "search-menu2",
+      "src": "/assets/image/search-menu2.png",
+      "map": "search-menu2-map",
+      "visible": false
+    },
+    {
+      "id": "search-menu2-clicked",
+      "src": "/assets/image/search-menu2-clicked.png",
+      "visible": false
+    },
+    {
+      "id": "c-image",
+      "src": "/assets/image/c-image.png",
+      "map": "c-image-map",
+      "visible": false
+    },
+    {
+      "id": "cc0-image",
+      "src": "/assets/image/cc0-image.png",
+      "map": "cc0-image-map",
+      "visible": false
+    },
+    {
+      "id": "astroaventura",
+      "src": "/assets/image/astroaventura.jpeg",
+      "visible": false
+    },
+    {
+      "id": "copyright",
+      "src": "/assets/image/copyright.jpeg",
+      "visible": false
+    },
+    {
+      "id": "licence",
+      "src": "/assets/image/licence.jpeg",
+      "visible": false
+    },
+    {
+      "id": "publicdomainpictures",
+      "src": "/assets/image/publicdomainpictures.png",
+      "visible": false
+    }
+  ],
+
+  "maps": {
+    "search-map": [
+      {
+        "coords": "1150,128,1295,165",
+        "action": {
+          "type": "changeImage",
+          "from": "search",
+          "to": "search-menu1"
+        }
+      }
+    ],
+
+    "search-menu1-map": [
+      {
+        "coords": "1145,256,1489,295",
+        "action": {
+          "type": "changeImage",
+          "from": "search-menu1",
+          "to": "search-menu2"
+        }
+      }
+    ],
+
+    "search-menu2-map": [
+      {
+        "coords": "1490,293,1755,333",
+        "action": {
+          "type": "changeImage",
+          "from": "search-menu2",
+          "to": "search-menu2-clicked",
+          "stats": { "time": -1 },
+          "openDialog": true,
+          "text": "¡Has ahorrado tiempo de búsqueda! Tiempo: -1",
+          "legal": true 
+        }
+      }
+    ],
+
+    "c-image-map": [
+      {
+        "coords": "1711,627,1829,678",
+        "action": {
+          "type": "changeImage",
+          "from": "c-image",
+          "to": "astroaventura",
+          "volver": true
+        }
+      },
+      {
+        "coords": "1546,691,1676,725",
+        "action": {
+          "type": "changeImage",
+          "from": "c-image",
+          "to": "copyright",
+          "volver": true
+        }
+      }
+    ],
+
+    "cc0-image-map": [
+      {
+        "coords": "1499,710,1671,734",
+        "action": {
+          "type": "changeImage",
+          "from": "cc0-image",
+          "to": "licence",
+          "volver": true
+        }
+      },
+      {
+        "coords": "1713,651,1827,700",
+        "action": {
+          "type": "changeImage",
+          "from": "cc0-image",
+          "to": "publicdomainpictures",
+          "volver": true,
+          "credits": true,
+          "author": "Imagen Vía Láctea: PublicDomainPictures.net (https://www.publicdomainpictures.net/es/view-image.php?image=328268&picture=constelacion-de-la-via-lactea)"
+        }
+      },
+      {
+        "coords": "1322,710,1497,737",
+        "action": {
+          "type": "changeImage",
+          "from": "cc0-image",
+          "to": "publicdomainpictures",
+          "volver": true,
+          "credits": true,
+          "author": "Imagen Vía Láctea: PublicDomainPictures.net (https://www.publicdomainpictures.net/es/view-image.php?image=328268&picture=constelacion-de-la-via-lactea)"
+        }
+      }
+    ]
+  },
+
+  "buttons": [
+    {
+      "name": "Buscar",
+      "id": "search",
+      "visible": true,
+      "function": "search_image"
+    },
+    {
+      "name": "Buscar otra",
+      "id": "other",
+      "visible": false,
+      "function": "other_image"
+    },
+    {
+      "name": "Usar",
+      "id": "use",
+      "visible": false,
+      "function": "use_image"
+    },
+    {
+      "name": "Volver",
+      "id": "back",
+      "visible": false,
+      "function": "back_image"
+    }
+  ] 
+}
+

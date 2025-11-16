@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado | Legal Project Simulator</title>
+    <script src="./js/stats.js" defer></script>
+    <script src="./js/code.js" defer></script>
+    <link rel="stylesheet" href="css/final.css">
+</head>
+<body>
+    <!-- Панель статов -->
+    <header id="stats-bar">
+        <ul>
+            <li>Monedas: <span id="coins"></span></li>
+            <li>Tiempo: <span id="time"></span></li>
+            <li>Calidad: <span id="quality"></span></li>
+            <li>Riesgo: <span id="risk"></span>%</li>
+        </ul>
+        <dialog id="inventory">
+            <h2>Créditos:</h2>
+            <ul id="inventory-list"></ul>
+            <button id="inv-close" onclick="closeInventory();">Cerrar</button>
+            <button id="inv-attribute" onclick="attribute(this);" style="display: none;">Atribuir</button>
+        </dialog>
+        <button id="code" onclick="openInventory();">&lt;/&gt;</button>
+    </header>
+
+    <h1>Resultados:</h1>
+
+    <ul id="results"></ul>
+
+    <a href="index.html">Continuar</a>
+
+    <script>
+        function final(){
+            let list = document.getElementById('results');
+            let el = document.createElement('li');
+            if(sessionStorage['coins']<70){
+                //Tu proyecto ha tenido problemas con el presupusto
+                el.textContent = "Tu proyecto ha tenido problemas con el presupusto";
+                list.appendChild(el);
+            }
+            if(sessionStorage['time']>11){
+                //Tu proyecto ha sufrido un retraso
+                el.textContent = "Tu proyecto ha sufrido un retraso";
+                list.appendChild(el);
+            }
+
+            if(sessionStorage['quality']<3){
+                //Calidad de tu proyecto ha disminuido
+                el.textContent = "Calidad de tu proyecto ha disminuido";
+                list.appendChild(el);
+            }
+            else if(sessionStorage['quality']>3){
+                //Calidad de tu proyecto ha aumentado
+                el.textContent = "Calidad de tu proyecto ha aumentado";
+                list.appendChild(el);
+            }
+
+            if(sessionStorage['risk']>=30){
+                //Tu proyecto ha tenido problemas legales
+                el.textContent = "Tu proyecto ha tenido problemas legales";
+                list.appendChild(el);
+            }
+            else if(sessionStorage['risk']==0){
+                //Has usado correctamente los recursos de terceros en tu proyecto
+                el.textContent = "Has usado correctamente los recursos de terceros en tu proyecto";
+                list.appendChild(el);
+            }
+            else{
+                //Hiciste algunas infracciones en cuanto al uso de recursos de terceros. Nadie lo ha notado. De momento...
+                el.textContent = "Hiciste algunas infracciones en cuanto al uso de recursos de terceros. Nadie lo ha notado. De momento...";
+                list.appendChild(el);
+            }
+        }
+
+        final();
+    </script>
+</body>
+</html>

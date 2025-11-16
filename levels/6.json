@@ -1,0 +1,90 @@
+{
+  "images": [
+    {
+      "id": "ia",
+      "src": "/assets/image/ia.jpeg",
+      "map": "ia-map",
+      "visible": true
+    },
+    {
+      "id": "ia-licence",
+      "src": "/assets/image/ia-licence.jpeg",
+      "visible": false
+    },
+    {
+      "id": "ia-generated",
+      "src": "/assets/image/ia-generated.png",
+      "visible": false
+    }
+    ,
+    {
+      "id": "ia-licence2",
+      "src": "/assets/image/ia-licence2.jpeg",
+      "map": "ia-map2",
+      "visible": false
+    }
+  ],
+
+  "maps": {
+    "ia-map": [
+      {
+        "coords": "813,6583,911,6628",
+        "action": {
+          "type": "changeImage",
+          "from": "ia",
+          "to": "ia-licence",
+          "credits": true,
+          "author": "Imagen Vía Láctea: Generada con Stable Diffusion"
+        }
+      },
+      {
+        "coords": "1518,6736,1719,6783",
+        "action": {
+          "type": "changeImage",
+          "from": "ia",
+          "to": "ia-licence2",
+          "credits": true,
+          "author": "Imagen Vía Láctea: Generada con Stable Diffusion"
+        }
+      }
+    ],
+    "ia-map2": [
+      {
+        "coords": "812,3396,914,3439",
+        "action": {
+          "type": "changeImage",
+          "from": "ia-licence2",
+          "to": "ia-licence",
+          "credits": true,
+          "author": "Imagen Vía Láctea: Generada con Stable Diffusion"
+        }
+      },
+      {
+        "coords": "1518,3550,1722,3595",
+        "action": {
+          "type": "changeImage",
+          "from": "ia-licence2",
+          "to": "ia-licence2",
+          "credits": true,
+          "author": "Imagen Vía Láctea: Generada con Stable Diffusion"
+        }
+      }
+    ]
+  },
+
+  "buttons": [
+    {
+      "name": "Usar",
+      "id": "use",
+      "visible": false,
+      "function": "use_ia"
+    },
+    {
+      "name": "Generar",
+      "id": "back",
+      "visible": true,
+      "function": "generate_ia"
+    }
+  ] 
+}
+

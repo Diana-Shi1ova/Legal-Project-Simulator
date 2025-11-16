@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel | Legal Project Simulator</title>
+
+    <link rel="stylesheet" href="./css/game.css">
+
+    <!-- Библиотека для масштабирования карт -->
+    <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+
+    <script src="./js/stats.js" defer></script>
+    <script src="./js/actions.js" defer></script>   <!-- performAction здесь -->
+    <script src="./js/buttons.js" defer></script>
+    <script src="./js/levelLoader.js" defer></script> <!-- здесь вызывается -->
+    <script src="./js/code.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Панель статов -->
+    <header id="stats-bar">
+        <ul>
+            <li>Monedas: <span id="coins"></span></li>
+            <li>Tiempo: <span id="time"></span></li>
+            <li>Calidad: <span id="quality"></span></li>
+            <li>Riesgo: <span id="risk"></span>%</li>
+        </ul>
+        <dialog id="inventory">
+            <h2>Créditos:</h2>
+            <ul id="inventory-list"></ul>
+            <button id="inv-close" onclick="closeInventory();">Cerrar</button>
+            <button id="inv-attribute" onclick="attribute(this);" style="display: none;">Atribuir</button>
+        </dialog>
+        <button id="code" onclick="openInventory();">&lt;/&gt;</button>
+    </header>
+
+    <!-- Корневой контейнер, сюда рендерится уровень -->
+    <main id="level-root">
+        
+    </main>
+
+    <div id="buttons">
+        <!-- <button id="btn-search">Buscar imagen</button>
+        <button id="btn-other" style="display:none;">Buscar otra</button>
+        <button id="btn-use" style="display:none;">Usar imagen</button>
+        <button id="btn-back" style="display:none;">Volver</button> -->
+    </div>
+
+    <!-- Общий диалог -->
+    <dialog id="dialog"></dialog>
+
+</body>
+</html>

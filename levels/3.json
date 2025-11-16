@@ -1,0 +1,98 @@
+{
+  "images": [
+    {
+      "id": "3d",
+      "src": "/assets/3d/3d.png",
+      "visible": true
+    },
+    {
+      "id": "3d-search",
+      "src": "/assets/3d/3d-search.png",
+      "map": "3d-map",
+      "visible": false
+    },
+    {
+      "id": "3d-search-filters",
+      "src": "/assets/3d/3d-search-filters.png",
+      "map": "3d-filters-map",
+      "visible": false
+    },
+    {
+      "id": "3d-search-filters2",
+      "src": "/assets/3d/3d-search-filters2.png",
+      "visible": false
+    },
+    {
+      "id": "3d-tierra",
+      "src": "/assets/3d/3d-tierra.png",
+      "map": "3d-tierra-map",
+      "visible": false
+    },
+    {
+      "id": "3d-licence",
+      "src": "/assets/3d/3d-licence.jpeg",
+      "visible": false
+    }
+  ],
+
+  "maps": {
+    "3d-map": [
+      {
+        "coords": "280,148,356,217",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "3d-search-filters"
+        }
+      }
+    ],
+    "3d-filters-map": [
+      {
+        "coords": "293,206,470,683",
+        "action": {
+            "type": "changeImage",
+          "from": "library",
+          "to": "3d-search-filters2",
+          "stats": { "time": -1 },
+          "openDialog": true,
+          "text": "¡Has ahorrado tiempo de búsqueda! Tiempo: -1"
+        }
+      }
+    ],
+    "3d-tierra-map": [
+      {
+        "coords": "143,756,344,783",
+        "action": {
+          "type": "changeImage",
+          "from": "library",
+          "to": "3d-licence",
+          "volver": true,
+          "author": "Tierra v1.1 (without changes) by uperesito, CC BY 4.0, sourse: https://sketchfab.com/3d-models/tierra-v11-0b460c8d3b524c049db5414f98e5819d",
+          "credits": true
+        }
+      }
+    ]
+  },
+
+  "buttons": [
+    {
+      "name": "Buscar",
+      "id": "search",
+      "visible": true,
+      "function": "search_3d"
+    },
+    {
+      "name": "Usar",
+      "id": "use",
+      "visible": false,
+      "function": "use_3d"
+    },
+    {
+      "name": "Volver",
+      "id": "back",
+      "visible": false,
+      "function": "back_3d"
+    }
+  ] 
+}
+

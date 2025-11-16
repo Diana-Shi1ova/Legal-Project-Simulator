@@ -1,0 +1,23 @@
+@import url(general.css);
+
+#options{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+#options button{
+    width: 10em;
+}
+
+#level-question{
+    margin-top: 0;
+}
+
+#selection-centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    padding: 3em;
+}

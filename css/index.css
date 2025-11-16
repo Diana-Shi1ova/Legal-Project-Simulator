@@ -1,0 +1,8 @@
+@import url(general.css);
+
+#inicio{
+    position: absolute;
+    right: 20%;
+    bottom: 30%;
+    padding: 1em 3em 1em 3em;
+}

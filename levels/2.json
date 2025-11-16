@@ -1,0 +1,86 @@
+{
+  "images": [
+    {
+      "id": "library",
+      "src": "/assets/library/library.jpeg",
+      "map": "library-map",
+      "visible": true
+    },
+    {
+      "id": "library-licence",
+      "src": "/assets/library/library-licence.jpeg",
+      "visible": false
+    },
+    {
+      "id": "library-mit",
+      "src": "/assets/library/library-mit.jpeg",
+      "map": "library-mit-map",
+      "visible": false
+    }
+  ],
+
+  "maps": {
+    "library-map": [
+      {
+        "coords": "175,689,1210,734",
+        "action": {
+          "type": "changeImage",
+          "from": "library",
+          "to": "library-licence",
+          "credits": true,
+          "author": "Librería: [añadir fichero LICENSE]",
+          "volver": true
+        }
+      },
+      {
+        "coords": "1224,588,1369,621",
+        "action": {
+          "type": "changeImage",
+          "from": "library",
+          "to": "library-mit",
+          "author": "Librería: [añadir fichero LICENSE]",
+          "credits": true
+        }
+      },
+      {
+        "coords": "471,900,618,950",
+        "action": {
+          "type": "changeImage",
+          "from": "library",
+          "to": "library-mit",
+          "author": "Librería: [añadir fichero LICENSE]",
+          "credits": true
+        }
+      }
+    ],
+    "library-mit-map": [
+      {
+        "coords": "172,688,1210,736",
+        "action": {
+          "type": "changeImage",
+          "from": "library",
+          "to": "library-licence",
+          "author": "Librería: [añadir fichero LICENSE]",
+          "credits": true,
+          "volver": true
+        }
+      }
+    ]
+  },
+
+  "buttons": [
+    {
+      "name": "Usar",
+      "id": "use",
+      "visible": true,
+      "function": "use_library"
+    },
+    {
+      "name": "Volver",
+      "id": "back",
+      "visible": false,
+      "function": "back_library"
+    }
+  ] 
+}
+

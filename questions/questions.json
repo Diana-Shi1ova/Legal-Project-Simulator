@@ -1,0 +1,201 @@
+[
+    {
+        "type": "image",
+        "name": "Imagen de la Vía Láctea",
+        "question": "Quieres hacer un landing para ganar visibilidad de tu proyecto y necesitas una imagen. ¿Cómo la vas a conseguir?",
+        "options": [
+            {
+                "option": "Google Images",
+                "actions": [
+                    {
+                        "action": "level",
+                        "level": "1"
+                    }
+                ]
+            },
+            {
+                "option": "IA",
+                "actions": [
+                    {
+                        "action": "level",
+                        "level": "6"
+                    }
+                ]
+            },
+            {
+                "option": "Artista",
+                "actions": [
+                    {
+                        "action": "modal",
+                        "text": "El artista te ha pedido 30 monedas. ¿Lo vas a contratar?",
+                        "buttons": [
+                            {
+                                "button": "Otra opción",
+                                "action": "close"
+                            },
+                            {
+                                "button": "Sí",
+                                "action": "actions"
+                            }
+                        ]
+                    },
+                    {
+                        "action": "coins",
+                        "type": "-",
+                        "value": 30
+                    },
+                    {
+                        "action": "quality",
+                        "type": "+",
+                        "value": 1
+                    },
+                    {
+                        "action": "list"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "library",
+        "name": "Librería para cálculos astronómicos",
+        "question": "Necesitas hacer cálculos para posicionar los cuerpos celestes en función de la localización, la fecha y el tiempo. ¿Cómo prefieres proceder?",
+        "options": [
+            {
+                "option": "Implementar",
+                "actions": [
+                    {
+                        "action": "modal",
+                        "text": "Has gastado mucho tiempo para implementar todo desde 0. Tiempo +5.",
+                        "buttons": [
+                            {
+                                "button": "Continuar",
+                                "action": "actions"
+                            }
+                        ]
+                    },
+                    {
+                        "action": "time",
+                        "type": "+",
+                        "value": 5
+                    },
+                    {
+                        "action": "list"
+                    }
+                ]
+            },
+            {
+                "option": "Buscar existente",
+                "actions": [
+                    {
+                        "action": "level",
+                        "level": "2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "3d",
+        "name": "Modelo 3D de la Tierra",
+        "question": "Quieres visualizar la Tierra en 3D en tu proyecto. ¿Cómo consigues el modelo?",
+        "options": [
+            {
+                "option": "Modelador",
+                "actions": [
+                    {
+                        "action": "modal",
+                        "text": "El modelador te ha pedido 50 monedas. ¿Lo vas a contratar?",
+                        "buttons": [
+                            {
+                                "button": "Otra opción",
+                                "action": "close"
+                            },
+                            {
+                                "button": "Sí",
+                                "action": "actions"
+                            }
+                        ]
+                    },
+                    {
+                        "action": "coins",
+                        "type": "-",
+                        "value": 50
+                    },
+                    {
+                        "action": "quality",
+                        "type": "+",
+                        "value": 1
+                    },
+                    {
+                        "action": "list"
+                    }
+                ]
+            },
+            {
+                "option": "Skechfab",
+                "actions": [
+                    {
+                        "action": "level",
+                        "level": "3"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "sound",
+        "name": "Efecto sonoro para los botones",
+        "question": "Quieres visualizar la Tierra en 3D en tu proyecto. ¿Cómo consigues el modelo?",
+        "options": [
+            {
+                "option": "FreeSound",
+                "actions": [
+                    {
+                        "action": "level",
+                        "level": "4"
+                    }
+                ]
+            },
+            {
+                "option": "Grabar nosotros",
+                "actions": [
+                    {
+                        "action": "modal",
+                        "text": "La calidad del proyecto ha bajado. Calidad: -1.",
+                        "buttons": [
+                            {
+                                "button": "Continuar",
+                                "action": "actions"
+                            }
+                        ]
+                    },
+                    {
+                        "action": "quality",
+                        "type": "-",
+                        "value": 1
+                    },
+                    {
+                        "action": "list"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "icon",
+        "name": "Icono",
+        "question": "Viendo tu sufrimiento, un colega tuyo te aconsejó usar la web flaticon.es diciendo que tiene un montón de iconos gratuitos a cualquier gusto.",
+        "options": [
+            {
+                "option": "Ir a buscar",
+                "actions": [
+                    {
+                        "action": "level",
+                        "level": "5"
+                    }
+                ]
+            }
+        ]
+    }
+]

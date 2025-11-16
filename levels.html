@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas | Legal Project Simulator</title>
+    <script src="./js/code.js" defer></script>
+    <link rel="stylesheet" href="css/levels.css">
+</head>
+<body>
+    <!-- Панель статов -->
+    <header id="stats-bar">
+        <ul>
+            <li>Monedas: <span id="coins"></span></li>
+            <li>Tiempo: <span id="time"></span></li>
+            <li>Calidad: <span id="quality"></span></li>
+            <li>Riesgo: <span id="risk"></span>%</li>
+        </ul>
+        <dialog id="inventory">
+            <h2>Créditos:</h2>
+            <ul id="inventory-list"></ul>
+            <button id="inv-close" onclick="closeInventory();">Cerrar</button>
+            <button id="inv-attribute" onclick="attribute(this);" style="display: none;">Atribuir</button>
+        </dialog>
+        <button id="code" onclick="openInventory();">&lt;/&gt;</button>
+    </header>
+
+    <ol>
+        <li><a href="selection.html?level=0">Imagen de la Vía Láctea</a></li>
+        <li><a href="selection.html?level=1">Librería para cálculos astronómicos</a></li>
+        <li><a href="selection.html?level=2">Modelo 3D de la Tierra</a></li>
+        <li><a href="selection.html?level=3">Efecto sonoro para los botones</a></li>
+        <li><a href="selection.html?level=4">Icono de la luna con estrellas</a></li>
+    </ol>
+    <script src="/js/stats.js" defer></script>
+</body>
+</html>
