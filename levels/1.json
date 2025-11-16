@@ -2,57 +2,57 @@
   "images": [
     {
       "id": "search",
-      "src": "/assets/image/search.png",
+      "src": "assets/image/search.png",
       "map": "search-map",
       "visible": true
     },
     {
       "id": "search-menu1",
-      "src": "/assets/image/search-menu1.png",
+      "src": "assets/image/search-menu1.png",
       "map": "search-menu1-map",
       "visible": false
     },
     {
       "id": "search-menu2",
-      "src": "/assets/image/search-menu2.png",
+      "src": "assets/image/search-menu2.png",
       "map": "search-menu2-map",
       "visible": false
     },
     {
       "id": "search-menu2-clicked",
-      "src": "/assets/image/search-menu2-clicked.png",
+      "src": "assets/image/search-menu2-clicked.png",
       "visible": false
     },
     {
       "id": "c-image",
-      "src": "/assets/image/c-image.png",
+      "src": "assets/image/c-image.png",
       "map": "c-image-map",
       "visible": false
     },
     {
       "id": "cc0-image",
-      "src": "/assets/image/cc0-image.png",
+      "src": "assets/image/cc0-image.png",
       "map": "cc0-image-map",
       "visible": false
     },
     {
       "id": "astroaventura",
-      "src": "/assets/image/astroaventura.jpeg",
+      "src": "assets/image/astroaventura.jpeg",
       "visible": false
     },
     {
       "id": "copyright",
-      "src": "/assets/image/copyright.jpeg",
+      "src": "assets/image/copyright.jpeg",
       "visible": false
     },
     {
       "id": "licence",
-      "src": "/assets/image/licence.jpeg",
+      "src": "assets/image/licence.jpeg",
       "visible": false
     },
     {
       "id": "publicdomainpictures",
-      "src": "/assets/image/publicdomainpictures.png",
+      "src": "assets/image/publicdomainpictures.png",
       "visible": false
     }
   ],

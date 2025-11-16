@@ -2,24 +2,24 @@
   "images": [
     {
       "id": "ia",
-      "src": "/assets/image/ia.jpeg",
+      "src": "assets/image/ia.jpeg",
       "map": "ia-map",
       "visible": true
     },
     {
       "id": "ia-licence",
-      "src": "/assets/image/ia-licence.jpeg",
+      "src": "assets/image/ia-licence.jpeg",
       "visible": false
     },
     {
       "id": "ia-generated",
-      "src": "/assets/image/ia-generated.png",
+      "src": "assets/image/ia-generated.png",
       "visible": false
     }
     ,
     {
       "id": "ia-licence2",
-      "src": "/assets/image/ia-licence2.jpeg",
+      "src": "assets/image/ia-licence2.jpeg",
       "map": "ia-map2",
       "visible": false
     }

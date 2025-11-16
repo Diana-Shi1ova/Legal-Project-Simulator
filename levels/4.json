@@ -2,24 +2,24 @@
   "images": [
     {
       "id": "sound",
-      "src": "/assets/sound/sound.png",
+      "src": "assets/sound/sound.png",
       "visible": true
     },
     {
       "id": "search-sound",
-      "src": "/assets/sound/search-sound.png",
+      "src": "assets/sound/search-sound.png",
       "map": "sound-map",
       "visible": false
     },
     {
       "id": "sound-click",
-      "src": "/assets/sound/sound-click.png",
+      "src": "assets/sound/sound-click.png",
       "map": "sound-click-map",
       "visible": false
     },
     {
       "id": "sound-click-attribute",
-      "src": "/assets/sound/sound-click-attribute.png",
+      "src": "assets/sound/sound-click-attribute.png",
       "map": "sound-click-attribute-map",
       "visible": false
     }

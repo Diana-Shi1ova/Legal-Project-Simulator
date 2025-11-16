@@ -2,18 +2,18 @@
   "images": [
     {
       "id": "library",
-      "src": "/assets/library/library.jpeg",
+      "src": "assets/library/library.jpeg",
       "map": "library-map",
       "visible": true
     },
     {
       "id": "library-licence",
-      "src": "/assets/library/library-licence.jpeg",
+      "src": "assets/library/library-licence.jpeg",
       "visible": false
     },
     {
       "id": "library-mit",
-      "src": "/assets/library/library-mit.jpeg",
+      "src": "assets/library/library-mit.jpeg",
       "map": "library-mit-map",
       "visible": false
     }

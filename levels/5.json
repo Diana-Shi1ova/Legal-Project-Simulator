@@ -2,36 +2,36 @@
   "images": [
     {
       "id": "icon",
-      "src": "/assets/icon/icon.png",
+      "src": "assets/icon/icon.png",
       "visible": true
     },
     {
       "id": "icon-luna",
-      "src": "/assets/icon/icon-luna.png",
+      "src": "assets/icon/icon-luna.png",
       "map": "icon-map",
       "visible": false
     },
     {
       "id": "icon-attribute1",
-      "src": "/assets/icon/icon-attribute1.png",
+      "src": "assets/icon/icon-attribute1.png",
       "map": "icon-attribute1-map",
       "visible": false
     },
     {
       "id": "icon-attribute2",
-      "src": "/assets/icon/icon-attribute2.png",
+      "src": "assets/icon/icon-attribute2.png",
       "map": "icon-attribute2-map",
       "visible": false
     },
     {
       "id": "icon-attribute3",
-      "src": "/assets/icon/icon-attribute3.png",
+      "src": "assets/icon/icon-attribute3.png",
       "map": "icon-attribute3-map",
       "visible": false
     },
     {
       "id": "icon-licence",
-      "src": "/assets/icon/icon-licence.png",
+      "src": "assets/icon/icon-licence.png",
       "map": "icon-licence-map",
       "visible": false
     }

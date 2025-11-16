@@ -2,35 +2,35 @@
   "images": [
     {
       "id": "3d",
-      "src": "/assets/3d/3d.png",
+      "src": "assets/3d/3d.png",
       "visible": true
     },
     {
       "id": "3d-search",
-      "src": "/assets/3d/3d-search.png",
+      "src": "assets/3d/3d-search.png",
       "map": "3d-map",
       "visible": false
     },
     {
       "id": "3d-search-filters",
-      "src": "/assets/3d/3d-search-filters.png",
+      "src": "assets/3d/3d-search-filters.png",
       "map": "3d-filters-map",
       "visible": false
     },
     {
       "id": "3d-search-filters2",
-      "src": "/assets/3d/3d-search-filters2.png",
+      "src": "assets/3d/3d-search-filters2.png",
       "visible": false
     },
     {
       "id": "3d-tierra",
-      "src": "/assets/3d/3d-tierra.png",
+      "src": "assets/3d/3d-tierra.png",
       "map": "3d-tierra-map",
       "visible": false
     },
     {
       "id": "3d-licence",
-      "src": "/assets/3d/3d-licence.jpeg",
+      "src": "assets/3d/3d-licence.jpeg",
       "visible": false
     }
   ],
