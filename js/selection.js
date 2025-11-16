@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const levelIndex = Number(urlParams.get("level")) || 0;
 
-  const response = await fetch("/questions/questions.json");
+  const response = await fetch("questions/questions.json");
   const levels = await response.json();
 
   const level = levels[levelIndex];
