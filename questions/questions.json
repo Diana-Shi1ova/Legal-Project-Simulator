@@ -146,7 +146,7 @@
     {
         "type": "sound",
         "name": "Efecto sonoro para los botones",
-        "question": "Quieres visualizar la Tierra en 3D en tu proyecto. ¿Cómo consigues el modelo?",
+        "question": "Quieres añadir un efecto sonoro para los botónes. ¿Cómo lo consigues?",
         "options": [
             {
                 "option": "FreeSound",
