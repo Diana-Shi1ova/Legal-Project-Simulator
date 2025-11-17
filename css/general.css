@@ -77,10 +77,11 @@ dialog p{
 }
 
 dialog button{
-    width: 6em;
-    margin-top: 1em;
+    width: fit-content;
+    /* margin-top: 1em;
     margin-right: .5em;
-    margin-left: .5em;
+    margin-left: .5em; */
+    white-space: normal;
 }
 
 #inv-close{
@@ -108,14 +109,17 @@ dialog button{
     box-sizing: border-box;
 }
 
-#inventory-list{
-    width: 100%;
-}
-
 /* #inventory{
     padding: 1em;
     text-align: center !important;
 } */
+
+#inventory-list li{
+    width: 100%;
+    white-space: normal;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+}
 
 #inventory{
     width: 60%;

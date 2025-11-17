@@ -3,6 +3,7 @@
 #options{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 1em;
     width: 100%;
     white-space: normal;
