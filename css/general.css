@@ -73,16 +73,18 @@ dialog p, dialog h2{
 }
 
 dialog p{
-    margin-bottom: 2em;
+    margin-bottom: 1em !important;
 }
 
 dialog button{
     width: 6em;
+    margin-top: 1em;
     margin-right: .5em;
     margin-left: .5em;
 }
 
 #inv-close{
+    margin: 0;
     background-color: transparent;
     width: fit-content;
     font-family: Arial;
@@ -102,6 +104,12 @@ dialog button{
     list-style: disc !important;
     padding: 0;
     margin-bottom: 1em !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#inventory-list{
+    width: 100%;
 }
 
 /* #inventory{
@@ -109,7 +117,23 @@ dialog button{
     text-align: center !important;
 } */
 
+#inventory{
+    width: 60%;
+}
+
 #inv-attribute{
     justify-self: center;
     align-self: center;
+}
+
+#stats-bar ul{
+    width: 100%;
+    white-space: normal;
+}
+
+@media all and (width<700px){
+    #stats-bar ul{
+        flex-direction: column;
+        gap: 0.5em;
+    }
 }

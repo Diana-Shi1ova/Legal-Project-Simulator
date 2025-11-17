@@ -31,3 +31,9 @@ a:active{
     /* padding: 1em; */
     text-align: left;
 }
+
+@media all and (width<700px){
+    #results-container{
+        margin-top: 1em !important;
+    }
+}
