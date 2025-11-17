@@ -62,7 +62,9 @@
         "action": {
             "type": "changeImage",
           "from": "library",
-          "to": "icon-attribute2"
+          "to": "icon-attribute2",
+          "credits":true,
+          "author": "https://www.flaticon.es/iconos-gratis/luna - Luna - iconos creados por Freepik - Flaticon"
         }
       },
       {
@@ -70,7 +72,9 @@
         "action": {
             "type": "changeImage",
           "from": "library",
-          "to": "icon-attribute3"
+          "to": "icon-attribute3",
+          "credits":true,
+          "author": "https://www.flaticon.es/iconos-gratis/luna - Luna - iconos creados por Freepik - Flaticon"
         }
       },
       {

@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Project Simulator</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
 </head>
 <body>
-    <img src="assets/inicio.png" alt="">
+    <div class="img-container">
+        <img src="assets/inicio.png" alt="">
+
+        <button id="inicio" onclick="levels()">Empezar</button>
+    </div>
+
     <!-- <a href="levels_list.html">Empezar</a> -->
-    <button id="inicio" onclick="levels();">Empezar</button>
+    <!-- <button id="inicio" onclick="levels();">Empezar</button> -->
     <script>
         function levels(){
             sessionStorage.clear();

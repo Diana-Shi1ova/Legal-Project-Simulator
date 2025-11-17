@@ -15,7 +15,7 @@ function openInventory() {
     });
 
     // если можно атрибутировать — показываем кнопку
-    if (sessionStorage['author']) {
+    if (sessionStorage['author'] && !sessionStorage['attribute']) {
         attr.style.display = "block";
     }
 

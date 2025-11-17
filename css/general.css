@@ -1,4 +1,5 @@
 body{
+    margin: 0;
     background-color: #090031;
     display: flex;
     flex-direction: column;
@@ -15,14 +16,15 @@ button{
     background-color: #9b045f;
     cursor: pointer;
     padding: .5em;
+    text-align: center;
 }
 
 button:hover{
-    background-color: #8d0055;
+    background-color: #7b004a;
 }
 
 button:active{
-    background-color: #6f0043;
+    background-color: #46002a;
 }
 
 header{
@@ -32,7 +34,7 @@ header{
 #stats-bar{
     display: flex;
     flex-direction: row;
-    background-color: #0f0051;
+    background-color: #270ba5;
 }
 
 #stats-bar ul{
@@ -49,5 +51,65 @@ header{
     position: absolute;
     right: .2em;
     top: .2em;
-    border-radius: 50%;
+    border-radius: 30%;
+}
+
+dialog{
+    width: 50%;
+    border: 0;
+    background-color: #270ba5;
+    color: #fff;
+    text-align: center;
+    /* padding: 2em; */
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7); /* степень затемнения */
+}
+
+
+dialog p, dialog h2{
+    margin-top: 0;
+}
+
+dialog p{
+    margin-bottom: 2em;
+}
+
+dialog button{
+    width: 6em;
+    margin-right: .5em;
+    margin-left: .5em;
+}
+
+#inv-close{
+    background-color: transparent;
+    width: fit-content;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20pt;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+}
+
+#inventory-list{
+    flex-direction: column !important;
+    gap: 1em !important;
+    padding-top: 0 !important;
+    text-align: left;
+    list-style: disc !important;
+    padding: 0;
+    margin-bottom: 1em !important;
+}
+
+/* #inventory{
+    padding: 1em;
+    text-align: center !important;
+} */
+
+#inv-attribute{
+    justify-self: center;
+    align-self: center;
 }

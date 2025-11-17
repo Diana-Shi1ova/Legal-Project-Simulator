@@ -1,8 +1,22 @@
 @import url(general.css);
 
-#inicio{
+.img-container {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#inicio {
     position: absolute;
-    right: 20%;
-    bottom: 30%;
-    padding: 1em 3em 1em 3em;
+    right: 10%;
+    bottom: 27%;
+
+    font-size: 2.5vw;
+    padding: 1em 1em;
 }

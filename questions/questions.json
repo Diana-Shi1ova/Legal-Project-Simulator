@@ -66,7 +66,7 @@
                 "actions": [
                     {
                         "action": "modal",
-                        "text": "Has gastado mucho tiempo para implementar todo desde 0. Tiempo +5.",
+                        "text": "Has gastado mucho tiempo para implementarlo todo desde 0. Tiempo +5.",
                         "buttons": [
                             {
                                 "button": "Continuar",
@@ -85,7 +85,7 @@
                 ]
             },
             {
-                "option": "Buscar existente",
+                "option": "Buscar ya existente",
                 "actions": [
                     {
                         "action": "level",
@@ -185,7 +185,7 @@
     {
         "type": "icon",
         "name": "Icono",
-        "question": "Viendo tu sufrimiento, un colega tuyo te aconsejó usar la web flaticon.es diciendo que tiene un montón de iconos gratuitos a cualquier gusto.",
+        "question": "Viendo tu sufrimiento con las búsquedas y licencias, un colega tuyo te aconsejó usar la web flaticon.es diciendo que tiene un montón de iconos gratuitos a cualquier gusto.",
         "options": [
             {
                 "option": "Ir a buscar",

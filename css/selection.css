@@ -18,6 +18,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4em;
-    padding: 3em;
+    justify-content: center;
+    margin-top: 6em;
+    padding: 2em;
+    border: 2px solid #fff;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+#selection-centered h1{
+    text-align: center;
+    margin-top: 0;
+}
+
+#selection-centered p{
+    margin-bottom: 2em;
 }

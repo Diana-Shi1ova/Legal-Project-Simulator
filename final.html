@@ -7,6 +7,7 @@
     <script src="js/stats.js" defer></script>
     <script src="js/code.js" defer></script>
     <link rel="stylesheet" href="css/final.css">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
 </head>
 <body>
     <!-- Панель статов -->
@@ -20,63 +21,69 @@
         <dialog id="inventory">
             <h2>Créditos:</h2>
             <ul id="inventory-list"></ul>
-            <button id="inv-close" onclick="closeInventory();">Cerrar</button>
+            <button id="inv-close" onclick="closeInventory();">X</button>
             <button id="inv-attribute" onclick="attribute(this);" style="display: none;">Atribuir</button>
         </dialog>
         <button id="code" onclick="openInventory();">&lt;/&gt;</button>
     </header>
 
-    <h1>Resultados:</h1>
-
-    <ul id="results"></ul>
-
-    <a href="index.html">Continuar</a>
+    <div id="results-container">
+        <h1>Resultados:</h1>
+        <ul id="results"></ul>
+        <button onclick="exit();">Continuar</button>
+        <!-- <a href="index.html">Continuar</a> -->
+    </div>
+    
 
     <script>
         function final() {
-        let list = document.getElementById('results');
-        
-        // 1. Presupuesto
-        if (sessionStorage['coins'] < 70) {
-            let el = document.createElement('li');
-            el.textContent = "Tu proyecto ha tenido problemas con el presupusto";
-            list.appendChild(el);
+            let list = document.getElementById('results');
+            
+            // 1. Presupuesto
+            if (sessionStorage['coins'] < 70) {
+                let el = document.createElement('li');
+                el.textContent = "Tu proyecto ha tenido problemas con el presupusto ❌";
+                list.appendChild(el);
+            }
+
+            // 2. Tiempo
+            if (sessionStorage['time'] > 11) {
+                let el = document.createElement('li');
+                el.textContent = "Tu proyecto ha sufrido un retraso ❌";
+                list.appendChild(el);
+            }
+
+            // 3. Calidad
+            if (sessionStorage['quality'] < 3) {
+                let el = document.createElement('li');
+                el.textContent = "Calidad de tu proyecto ha disminuido ❌";
+                list.appendChild(el);
+            } else if (sessionStorage['quality'] > 3) {
+                let el = document.createElement('li');
+                el.textContent = "Calidad de tu proyecto ha aumentado ✅";
+                list.appendChild(el);
+            }
+
+            // 4. Riesgo
+            if (sessionStorage['risk'] >= 30) {
+                let el = document.createElement('li');
+                el.textContent = "Tu proyecto ha tenido problemas legales ❌";
+                list.appendChild(el);
+            } else if (sessionStorage['risk'] == 0) {
+                let el = document.createElement('li');
+                el.textContent = "Has usado correctamente los recursos de terceros en tu proyecto ✅";
+                list.appendChild(el);
+            } else {
+                let el = document.createElement('li');
+                el.textContent = "Hiciste algunas infracciones en cuanto al uso de recursos de terceros. Nadie lo ha notado. De momento... ⚠️";
+                list.appendChild(el);
+            }
         }
 
-        // 2. Tiempo
-        if (sessionStorage['time'] > 11) {
-            let el = document.createElement('li');
-            el.textContent = "Tu proyecto ha sufrido un retraso";
-            list.appendChild(el);
+        function exit(){
+            sessionStorage.clear();
+            window.location.href = "index.html";
         }
-
-        // 3. Calidad
-        if (sessionStorage['quality'] < 3) {
-            let el = document.createElement('li');
-            el.textContent = "Calidad de tu proyecto ha disminuido";
-            list.appendChild(el);
-        } else if (sessionStorage['quality'] > 3) {
-            let el = document.createElement('li');
-            el.textContent = "Calidad de tu proyecto ha aumentado";
-            list.appendChild(el);
-        }
-
-        // 4. Riesgo
-        if (sessionStorage['risk'] >= 30) {
-            let el = document.createElement('li');
-            el.textContent = "Tu proyecto ha tenido problemas legales";
-            list.appendChild(el);
-        } else if (sessionStorage['risk'] == 0) {
-            let el = document.createElement('li');
-            el.textContent = "Has usado correctamente los recursos de terceros en tu proyecto";
-            list.appendChild(el);
-        } else {
-            let el = document.createElement('li');
-            el.textContent = "Hiciste algunas infracciones en cuanto al uso de recursos de terceros. Nadie lo ha notado. De momento...";
-            list.appendChild(el);
-        }
-}
-
 
         final();
     </script>

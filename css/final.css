@@ -1,1 +1,33 @@
 @import url(general.css);
+
+/*a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #9b045f;
+    padding: .5em 1.5em .5em 1.5em;
+}
+
+a:hover{
+    background-color: #7b004a;
+}
+
+a:active{
+    background-color: #46002a;
+}*/
+
+#results-container{
+    margin-top: 6em;
+    padding: 1em 2em 2em 2em;
+    border: 2px solid #fff;
+    /* margin-left: 6em;
+    margin-right: 6em; */
+    text-align: center;
+    /* padding-bottom: 2em; */
+}
+
+#results-container ul{
+    margin-top: 0;
+    margin-bottom: 2em;
+    /* padding: 1em; */
+    text-align: left;
+}
